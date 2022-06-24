@@ -1,17 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .contact__title {
   visibility: hidden;
 }
 
-p {
+p,
+ul {
   margin-top: 0;
   margin-bottom: 0px;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .contact__category--green,
 .contact__category--brown {
   display: flex;
-  width: 75px;
-  height: 28px;
+  width: 80px;
+  height: 16px;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -19,12 +28,22 @@ p {
   border-radius: 6px;
 }
 
+.contact__box:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .contact__category--green {
-  width: 138px;
+  width: 130px;
   background-color: #c2e297;
 }
 
 .contact__category--text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
   color: #ffffff;
 }
 
@@ -38,7 +57,7 @@ p {
 }
 
 .contact__item {
-  width: 368px;
+  width: 280px;
   border-radius: 24px;
   padding: 40px 32px 40px 32px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -65,7 +84,7 @@ p {
 
 .contact__bolt,
 .contact__sheddle--day {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -76,11 +95,71 @@ p {
 
 .contact__regular,
 .contact__sheddle--time {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 183%;
   letter-spacing: 0.04em;
   color: #ffa5ba;
+}
+
+.contact__regular {
+  color: #907e82;
+}
+
+.contact__link {
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #907e82;
+}
+
+.contact__link:hover {
+  color: #ffa5ba;
+}
+
+.contact__button__list {
+  list-style: none;
+  padding: 0;
+}
+
+.button__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contact__button {
+  display: flex;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 32px;
+  padding-left: 32px;
+  border: none;
+  border-radius: 24px;
+  color: #d41342;
+  background-color: #ecebeb;
+}
+
+.current {
+  color: #ffffff;
+  background-color: #d41342;
+}
+
+.contact__button--text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.contact__button--icon {
+  margin-left: 15px;
 }
