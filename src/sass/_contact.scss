@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.contact{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contact__title {
   visibility: hidden;
 }
@@ -57,7 +62,9 @@ ul {
 }
 
 .contact__item {
-  width: 280px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 24px;
   padding: 40px 32px 40px 32px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -127,6 +134,12 @@ ul {
   padding: 0;
 }
 
+.contact__button {
+  width: 162px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .button__item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -136,8 +149,8 @@ ul {
   height: 44px;
   align-items: center;
   justify-content: center;
-  padding-right: 32px;
-  padding-left: 32px;
+  // padding-right: 32px;
+  // padding-left: 32px;
   border: none;
   border-radius: 24px;
   color: #d41342;
@@ -162,4 +175,8 @@ ul {
 
 .contact__button--icon {
   margin-left: 15px;
+}
+
+.button__link {
+  text-decoration: none;
 }
