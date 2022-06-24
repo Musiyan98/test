@@ -28,23 +28,42 @@ img {
   font-style: normal;
 }
 
+// -----------------------------------------
 .products {
   margin-left: auto;
   margin-right: auto;
   max-width: 280px;
   padding: 60px 20px;
   background-color: #ffffff;
+
   text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+}
+
+.products__subtext {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
 }
 
 .products__title {
   margin-bottom: 8px;
+
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
 }
 
 .products__img {
@@ -68,7 +87,6 @@ img {
   background-color: #f0d1a5;
   border-radius: 24px;
 }
-
 .products__thumb-2 {
   padding: 160px 0 40px 0;
   background-color: #c2e297;
@@ -86,9 +104,10 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
-  /* or 21px */
+
   text-align: center;
   letter-spacing: 0.04em;
+
   color: #ffffff;
 }
 
