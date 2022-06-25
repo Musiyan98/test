@@ -1,136 +1,127 @@
 .modal__window {
-    position: relative;
-    max-width: 600px;
-    border-radius: 22px;
-    background-color: #FFA5BA;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(../images/hero/ice-cream-cone@2x_mobile.png);
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: 10px, 40px;
-  }
-  
-   .round-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    padding: 0px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: solid 1px rgba(0, 0, 0, 0.4);
-    background-color: #FFA5BA;
-    cursor: pointer;
-  }
-  
-  .form-title {
-    padding: 40px 40px 12px 40px;
-    margin: 0px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: right;
-    letter-spacing: 0.005em;
-    color:  #907E82;
-  }
-  
-  .role-groupe {
-    width: auto;
-    left: 40px;
-    top: 112px;
-    padding-left: 190px;
-    padding-right: 10px;
-    margin-bottom: 30px;
-  }
-  
-  .data-box {
-    margin-bottom: 10px;
-    height: 58px;
-    width: 95%;
-  }
-  
-  .data-box input {
-    box-sizing: border-box;
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 0px;
-    margin-top: 4px;
-    padding-left: 20px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  input:hover + .icon-box,
-  input:focus + .icon-box,
-  .icon-box:hover {
-    fill: blue;
-  }
-  
-  .feedback {
-    width: 95%;
-    height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    margin-top: 4px;
-    transition: blue 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    resize: none;
-    padding: 12px 16px;
-  }
-  
-  .feedback::placeholder {
+  // display: none;
+  position: relative;
+  max-width: 600px;
+  border-radius: 22px;
+  background-color: var(--color-text-lable);
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/hero/ice-cream-cone@2x_mobile.png);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 10px, 40px;
+}
+
+.round-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffa5ba;
+}
+
+.form-title {
+  padding: 40px 40px 12px 40px;
+  margin: 0px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: 0.005em;
+  color: #907e82;
+}
+
+.role-groupe {
+  width: auto;
+  left: 40px;
+  top: 112px;
+  padding-left: 190px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+}
+
+.data-box {
+  margin-bottom: 10px;
+  height: 58px;
+  width: 95%;
+}
+
+.data-box input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 0px;
+  margin-top: 4px;
+  padding-left: 20px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback {
+  width: 95%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  transition: blue 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
+  padding: 12px 16px;
+
+  &::placeholder {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    color:  #907E82;
+    color: var(--color-text-paragraph);
   }
-  
-  .data-box input:hover,
-  .feedback:hover,
-  .data-box input:focus,
-  .feedback:focus {
-    border-color: blue;
-  }
-  
-  .round-button:hover .round-button_icon {
-    fill: blue;
-  }
-  
-  .client-data, .data-field {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    color:  #907E82;
-  }
-  
-  .button-sub {
-    display: block;
-    width: 120px;
-    height: 44px;
-    border-radius: 24px;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #D41342;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .button-sub__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    color: #FFFFFF ;
-  }
-  
-  .button-sub:hover,
-  .round-button:hover {
-    box-shadow: 0px 8px 30px rgba(81, 6, 25, 0.2);
-  }
-  
-  .modal_button {
-    padding-bottom: 20px;
-  }
+}
+
+.data-box input:hover,
+.feedback:hover,
+.data-box input:focus,
+.feedback:focus {
+  border-color: var(--color-btn-active);
+}
+
+.client-data,
+.data-field {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-text-paragraph);
+}
+
+.button-sub {
+  display: block;
+  width: 120px;
+  height: 44px;
+  border-radius: 24px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #d41342;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-sub__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-white);
+}
+
+.button-sub:hover,
+.round-button:hover {
+  box-shadow: 0px 8px 30px rgba(81, 6, 25, 0.6);
+}
+
+.modal_button {
+  padding-bottom: 20px;
+}
