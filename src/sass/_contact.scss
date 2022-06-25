@@ -1,3 +1,12 @@
+
+ul {
+  list-style: none;;
+}
+
+a {
+  font-style: normal;
+}
+
 .contact {
   margin-left: auto;
   margin-right: auto;
@@ -15,7 +24,7 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  background-color: color-white;
+  background-color: var(--color-coffee-style);
   border-radius: 6px;
 }
 
@@ -25,7 +34,7 @@
 
 .contact__category--green {
   width: 130px;
-  background-color: color-food-style;
+  background-color: var(--color-food-style);
 }
 
 .contact__category--text {
@@ -33,7 +42,7 @@
   font-size: 12px;
   line-height: 22px;
   letter-spacing: 0.04em;
-  color: color-white;
+  color: var(--color-white);
 }
 
 .contact__list {
@@ -78,7 +87,7 @@
   font-size: 16px;
   line-height: 186%;
   letter-spacing: 0.04em;
-  color: color-text-accent;
+  color: var(--color-text-accent);
 }
 
 .contact__regular,
@@ -87,22 +96,22 @@
   font-size: 16px;
   line-height: 183%;
   letter-spacing: 0.04em;
-  color: color-text-lable;
+  color: var(--color-text-lable);
 }
 
 .contact__regular {
-  color: color-text-paragraph;
+  color: var(--color-text-paragraph);
 }
 
 .contact__link {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  color: color-text-paragraph;
+  color: var(--color-text-paragraph);
 }
 
 .contact__link:hover {
-  color: color-text-lable;
+  color: var(--color-text-lable);
 }
 
 .contact__button__list {
@@ -127,8 +136,8 @@
   justify-content: center;
   border: none;
   border-radius: 24px;
-  color: color-text-title;
-  background-color: color-white;
+  color: var(--color-text-title);
+  background-color: var(--color-white);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -137,8 +146,8 @@
 }
 
 .current {
-  color: color-white;
-  background-color: color-text-title;
+  color: var(--color-white);
+  background-color: var(--color-text-title);
 }
 
 .contact__button--text {
