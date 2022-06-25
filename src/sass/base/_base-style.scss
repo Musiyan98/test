@@ -11,6 +11,7 @@ p {
 ul {
    margin: 0;
    padding: 0;
+   list-style: none
 }
 
 a {
@@ -28,11 +29,18 @@ body {
    position: relative;
 }
 
-.list {
-   list-style: none;
-}
-
 .btn {
    cursor: pointer;
    border: none;
 }
+.section {
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+
+.container {
+   padding-left: 20px;
+   padding-right: 20px;
+   margin: 0 auto;
+   width: 320px;
+} 
