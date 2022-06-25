@@ -84,7 +84,7 @@
 
   &__thumb-1::before {
     content: '';
-    margin-top: -108%;
+    margin-top: -106%;
     height: 280px;
     width: 100%;
     background-image: url('/src/images/products/ice-1_sm.png');
@@ -106,7 +106,7 @@
 
   &__thumb-2::before {
     content: '';
-    margin-top: -108%;
+    margin-top: -106%;
     height: 280px;
     width: 100%;
     background-image: url('/src/images/products/ice-2_sm.png');
@@ -118,6 +118,8 @@
   &__subtitle {
     display: flex;
     flex-direction: column;
+
+    margin-top: 20px;
 
     font-family: 'Titan One';
     font-style: normal;
