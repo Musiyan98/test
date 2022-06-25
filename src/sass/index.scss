@@ -1,6 +1,12 @@
 @import './common';
-@import './example';
-@import './check';
+@import './base/module-base';
+@import './header';
+@import './gallery_example';
 @import './contact';
 @import './products';
 @import './customer-reviews';
+@import './advantages';
+@import './hero';
+@import './about';
+@import './burger-menu';
+@import './modal';
