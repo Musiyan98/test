@@ -1,97 +1,169 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.link {
-  text-decoration: none;
-  color: currentColor;
-  font-style: normal;
-}
-
 .products {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 280px;
-  padding: 60px 20px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
+
   text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-}
 
-.products__title {
-  margin-bottom: 8px;
-}
+  &__subtext {
+    margin-bottom: 15px;
 
-.products__img {
-  max-width: 100%;
-  margin-bottom: -50%;
-  z-index: 10;
-}
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
 
-.products__item {
-  max-width: 100%;
-}
+    text-align: center;
+    text-transform: uppercase;
 
-.products__thumb {
-  padding: 160px 0 40px 0;
-  background-color: #ffb8ca;
-  border-radius: 24px;
-}
+    color: var(--color-text-lable);
+  }
 
-.products__thumb-1 {
-  padding: 160px 0 40px 0;
-  background-color: #f0d1a5;
-  border-radius: 24px;
-}
+  &__title {
+    margin-bottom: 148px;
 
-.products__thumb-2 {
-  padding: 160px 0 40px 0;
-  background-color: #c2e297;
-  border-radius: 24px;
-}
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
-.products__subtitle {
-  margin-bottom: 32px;
-}
+    color: var(--color-text-title);
+  }
 
-.products__text {
-  padding-left: 41px;
-  padding-right: 39px;
-  margin-bottom: 32px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 152%;
-  /* or 21px */
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-}
+  &__item {
+    max-width: 100%;
+  }
 
-.svg-1 {
-  margin-bottom: 32px;
+  &__item:not(:last-child) {
+    margin-bottom: 140px;
+  }
+
+  &__thumb {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 160px 0 40px 0;
+    background-color: var(--color-bg-main);
+    border-radius: 24px;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__thumb::before {
+    content: '';
+    display: block;
+    margin-top: -106%;
+    height: 280px;
+    width: 100%;
+    background-image: url('/src/images/products/ice_sm.png');
+
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__thumb-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 160px 0 40px 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-coffee-style);
+    border-radius: 24px;
+  }
+
+  &__thumb-1::before {
+    content: '';
+    margin-top: -106%;
+    height: 280px;
+    width: 100%;
+    background-image: url('/src/images/products/ice-1_sm.png');
+
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__thumb-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 160px 0 40px 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-food-style);
+    border-radius: 24px;
+  }
+
+  &__thumb-2::before {
+    content: '';
+    margin-top: -106%;
+    height: 280px;
+    width: 100%;
+    background-image: url('/src/images/products/ice-2_sm.png');
+
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__subtitle {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--color-white);
+  }
+
+  &__subtitle::after {
+    content: '';
+    width: 26px;
+    height: 6px;
+    margin: 32px auto;
+    background-image: url('../images/products/3x-balls.svg');
+  }
+
+  &__text {
+    padding-left: 41px;
+    padding-right: 39px;
+    margin-bottom: 32px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--color-white);
+  }
+
+  &__btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    fill: var(--color-btn-active);
+  }
 }

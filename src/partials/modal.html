@@ -1,0 +1,44 @@
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+<section class="modal__window">
+
+<div class="container">
+<form class="js-client-data" autocomplete="off">
+      <button data-modal-close class="round-button btn" type="button">
+        <svg width="13" height="13">
+          <use class="round-button_icon" href="./images/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+      <div>
+        <h2 class="form-title">Leave your details, we will call you back</h2>
+      </div>
+      <div class="role-groupe" role="groupe">
+        <div class="data-box">
+          <label class="client-data" for="name">Name</label autocomplete="on">
+          <input class:="data-field" type="text" name="name" id="name" />
+        </div>
+        <div class="data-box">
+          <label class="client-data" for="phone-number">Tel</label>
+          <input class:="data-field" type="tel" name="name" id="phone-number" />
+        </div>
+        <div class="data-box">
+          <label class="client-data" for="e-mail">Mail</label>
+          <input class:="data-field" type="email" name="name" id="e-mail" />
+        </div>
+        <div class="data-box-feed">
+          <label class="client-data" for="comment">What kind of cooperation do you interested</label>
+          <textarea name="feedback" rows="5" class="feedback" id="comment" placeholder="Enter the text"></textarea>
+        </div>
+      </div>
+      <div class="modal_button">
+        <button class="button-sub" type="submit">
+          <p class="button-sub__text">Send</p>
+        </button>
+      </div>
+  </form>
+</div>
+  </section>
+  </div>
+</div>
+  <script src="/src/js/modal.js"></script>
