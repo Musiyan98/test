@@ -176,11 +176,15 @@
 }
 
 .products__icon {
-  fill: var(--color-bg-main);
+  fill: var(--color-btn-active);
 }
-.products__thumb-1 .products__icon {
-  fill: var(--color-coffee-style);
-}
-.products__thumb-2 .products__icon {
-  fill: var(--color-food-style);
-}
+
+// .products__icon {
+//   fill: var(--color-bg-main);
+// }
+// .products__thumb-1 .products__icon {
+//   fill: var(--color-coffee-style);
+// }
+// .products__thumb-2 .products__icon {
+//   fill: var(--color-food-style);
+// }
