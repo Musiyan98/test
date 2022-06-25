@@ -1,0 +1,38 @@
+<section class="hero">
+  <div class="hero__container">
+    <h1 class="hero__title">
+      ice cream<br />
+      made with <br />
+      <span class="hero__title--accept"> passion</span>
+    </h1>
+    <ul class="hero__btn">
+      <li class="hero__item">
+        <a href="" class="btn--secondary hero__link">Products </a>
+      </li>
+      <li class="hero__item">
+        <a href="" class="btn--primary hero__link">How it’s made? </a>
+      </li>
+    </ul>
+  </div>
+  <div class="decoration">
+    <div class="decoration__elipse"></div>
+  </div>
+  <picture>
+    <!-- набір зображень для телефону -->
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        images/hero/ice-cream-cone_mobile.png    1x,
+        images/hero/ice-cream-cone@2x_mobile.png
+      "
+      type="image/jpg"
+    />
+    <img
+      class="hero__img"
+      src="images/hero/ice-cream-cone_mobile.png"
+      alt="ice-cream-cone"
+      width="171"
+      heignt="410"
+    />
+  </picture>
+</section>
