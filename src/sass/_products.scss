@@ -1,97 +1,183 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.link {
-  text-decoration: none;
-  color: currentColor;
-  font-style: normal;
-}
-
 .products {
+  display: flex;
+  flex-direction: column;
+
   margin-left: auto;
   margin-right: auto;
   max-width: 280px;
   padding: 60px 20px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
+
   text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-.products__title {
-  margin-bottom: 8px;
+.products__subtext {
+  margin-bottom: 15px;
+
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-text-lable);
 }
 
-.products__img {
-  max-width: 100%;
-  margin-bottom: -50%;
-  z-index: 10;
+.products__title {
+  margin-bottom: 148px;
+
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--color-text-title);
 }
 
 .products__item {
   max-width: 100%;
 }
+.products__item:not(:last-child) {
+  margin-bottom: 140px;
+}
 
 .products__thumb {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 160px 0 40px 0;
-  background-color: #ffb8ca;
+  background-color: var(--color-bg-main);
   border-radius: 24px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.products__thumb::before {
+  content: '';
+  display: block;
+  margin-top: -118%;
+  height: 280px;
+  width: 100%;
+  background-image: url('/src/images/products/ice_sm.png');
+
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .products__thumb-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 160px 0 40px 0;
-  background-color: #f0d1a5;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-coffee-style);
   border-radius: 24px;
+}
+
+.products__thumb-1::before {
+  content: '';
+  margin-top: -118%;
+  height: 280px;
+  width: 100%;
+  background-image: url('/src/images/products/ice-1_sm.png');
+
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .products__thumb-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 160px 0 40px 0;
-  background-color: #c2e297;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-food-style);
   border-radius: 24px;
 }
 
-.products__subtitle {
-  margin-bottom: 32px;
+.products__thumb-2::before {
+  content: '';
+  margin-top: -118%;
+  height: 280px;
+  width: 100%;
+  background-image: url('/src/images/products/ice-2_sm.png');
+
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
+.products__subtitle {
+  display: flex;
+  flex-direction: column;
+
+  // margin-bottom: 32px;
+
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+}
+// ------------------Alert
+.products__subtitle::after {
+  content: '';
+  width: 26px;
+  height: 6px;
+  margin: 32px auto;
+  background-image: url('../images/products/3x-balls.svg');
+  // background-image: url('../images/symbol-defs.svg#icon-balls');
+  // fill: rgb(21, 219, 34);
+  // background-color: red;
+}
+// ------------------Alert
 
 .products__text {
   padding-left: 41px;
   padding-right: 39px;
   margin-bottom: 32px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 152%;
   /* or 21px */
+
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+
+  color: var(--color-white);
 }
 
-.svg-1 {
-  margin-bottom: 32px;
+.products__btn {
+  display: block;
+  border: none;
+  border-radius: 50%;
+}
+
+.products__icon {
+  fill: var(--color-bg-main);
+}
+.products__thumb-1 .products__icon {
+  fill: var(--color-coffee-style);
+}
+.products__thumb-2 .products__icon {
+  fill: var(--color-food-style);
 }
