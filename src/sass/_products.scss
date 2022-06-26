@@ -22,8 +22,9 @@
 
     font-size: 34px;
     line-height: 1.15;
-    text-align: center;
+
     letter-spacing: 0.04em;
+    text-align: center;
     text-transform: uppercase;
 
     color: var(--color-text-title);
@@ -40,13 +41,15 @@
   &__thumb {
     display: flex;
     flex-direction: column;
+
     width: 100%;
     padding: 160px 0 40px 0;
-    background-color: var(--color-bg-main);
     border-radius: 24px;
 
     justify-content: center;
     align-items: center;
+
+    background-color: var(--color-bg-main);
 
     &::before {
       content: '';
@@ -54,44 +57,50 @@
       margin-top: -106%;
       height: 280px;
       width: 100%;
-      background-image: url('/src/images/products/ice_sm.png');
 
       background-size: contain;
       background-repeat: no-repeat;
+      background-image: url('/src/images/products/ice_sm.png');
     }
   }
 
   &__thumb-1 {
     display: flex;
     flex-direction: column;
+
     width: 100%;
     padding: 160px 0 40px 0;
+
     justify-content: center;
     align-items: center;
-    background-color: var(--color-coffee-style);
+
     border-radius: 24px;
+    background-color: var(--color-coffee-style);
 
     &::before {
       content: '';
       margin-top: -106%;
       height: 280px;
       width: 100%;
-      background-image: url('/src/images/products/ice-1_sm.png');
 
       background-size: contain;
       background-repeat: no-repeat;
+      background-image: url('/src/images/products/ice-1_sm.png');
     }
   }
 
   &__thumb-2 {
     display: flex;
     flex-direction: column;
+
     width: 100%;
     padding: 160px 0 40px 0;
+
     justify-content: center;
     align-items: center;
-    background-color: var(--color-food-style);
+
     border-radius: 24px;
+    background-color: var(--color-food-style);
 
     &::before {
       content: '';
@@ -115,9 +124,10 @@
 
     font-size: 20px;
     line-height: 1.15;
-    text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+
+    text-align: center;
 
     color: var(--color-white);
 
@@ -140,15 +150,16 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
+    letter-spacing: 0.04em;
 
     text-align: center;
-    letter-spacing: 0.04em;
 
     color: var(--color-white);
   }
 
   &__btn {
     display: block;
+
     width: 40px;
     height: 40px;
 
