@@ -1,10 +1,9 @@
-.container {
+.modalcontainer {
   max-width: 100%;
-  width: 320px;
+  width: 100%;
 }
 
 .modal__window {
-  // display: none;
   position: relative;
   max-width: 600px;
   border-radius: 22px;
@@ -40,7 +39,7 @@
   line-height: 23px;
   text-align: right;
   letter-spacing: 0.005em;
-  color: #907e82;
+  color: rgb(148, 56, 148);
 }
 
 .role-groupe {
@@ -84,7 +83,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    color: var(--color-text-paragraph);
+    color: rgb(148, 56, 148);;
   }
 }
 
@@ -100,7 +99,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  color: var(--color-text-paragraph);
+  color: rgb(148, 56, 148);
 }
 
 .button-sub {
