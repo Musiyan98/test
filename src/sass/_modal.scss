@@ -1,7 +1,6 @@
-.modalcontainer {
-  max-width: 100%;
+.modal_container {
   width: 100%;
-}
+  }
 
 .modal__window {
   position: relative;
@@ -28,6 +27,7 @@
   height: 40px;
   border-radius: 50%;
   border: none;
+  color: var(--color-white);
   background-color: #ffa5ba;
 }
 
