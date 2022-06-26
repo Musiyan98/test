@@ -1,20 +1,11 @@
 .products {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 320px;
-  padding: 60px 20px;
   background-color: var(--color-white);
 
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-
-  &__subtext {
+  &__labels {
     margin-bottom: 15px;
 
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 18px;
     line-height: 1.17;
 
@@ -28,12 +19,12 @@
     margin-bottom: 148px;
 
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 34px;
     line-height: 1.15;
-    text-align: center;
+
     letter-spacing: 0.04em;
+    text-align: center;
     text-transform: uppercase;
 
     color: var(--color-text-title);
@@ -41,102 +32,112 @@
 
   &__item {
     max-width: 100%;
-  }
 
-  &__item:not(:last-child) {
-    margin-bottom: 140px;
+    &:not(:last-child) {
+      margin-bottom: 140px;
+    }
   }
 
   &__thumb {
     display: flex;
     flex-direction: column;
+
     width: 100%;
     padding: 160px 0 40px 0;
-    background-color: var(--color-bg-main);
     border-radius: 24px;
 
     justify-content: center;
     align-items: center;
-  }
 
-  &__thumb::before {
-    content: '';
-    display: block;
-    margin-top: -106%;
-    height: 280px;
-    width: 100%;
-    background-image: url('/src/images/products/ice_sm.png');
+    background-color: var(--color-bg-main);
 
-    background-size: contain;
-    background-repeat: no-repeat;
+    &::before {
+      content: '';
+      display: block;
+      margin-top: -106%;
+      height: 280px;
+      width: 100%;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('/src/images/products/ice_sm.png');
+    }
   }
 
   &__thumb-1 {
     display: flex;
     flex-direction: column;
+
     width: 100%;
     padding: 160px 0 40px 0;
+
     justify-content: center;
     align-items: center;
-    background-color: var(--color-coffee-style);
+
     border-radius: 24px;
-  }
+    background-color: var(--color-coffee-style);
 
-  &__thumb-1::before {
-    content: '';
-    margin-top: -108%;
-    height: 280px;
-    width: 100%;
-    background-image: url('/src/images/products/ice-1_sm.png');
+    &::before {
+      content: '';
+      margin-top: -106%;
+      height: 280px;
+      width: 100%;
 
-    background-size: contain;
-    background-repeat: no-repeat;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('/src/images/products/ice-1_sm.png');
+    }
   }
 
   &__thumb-2 {
     display: flex;
     flex-direction: column;
+
     width: 100%;
     padding: 160px 0 40px 0;
+
     justify-content: center;
     align-items: center;
-    background-color: var(--color-food-style);
+
     border-radius: 24px;
-  }
+    background-color: var(--color-food-style);
 
-  &__thumb-2::before {
-    content: '';
-    margin-top: -108%;
-    height: 280px;
-    width: 100%;
-    background-image: url('/src/images/products/ice-2_sm.png');
+    &::before {
+      content: '';
+      margin-top: -106%;
+      height: 280px;
+      width: 100%;
+      background-image: url('/src/images/products/ice-2_sm.png');
 
-    background-size: contain;
-    background-repeat: no-repeat;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   &__subtitle {
     display: flex;
     flex-direction: column;
 
+    margin-top: 20px;
+
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 20px;
     line-height: 1.15;
-    text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: var(--color-white);
-  }
+    text-align: center;
 
-  &__subtitle::after {
-    content: '';
-    width: 26px;
-    height: 6px;
-    margin: 32px auto;
-    background-image: url('../images/products/3x-balls.svg');
+    color: var(--color-white);
+
+    &::after {
+      content: '';
+      width: 26px;
+      height: 6px;
+      margin: 32px auto;
+      background-image: url('../images/products/3x-balls.svg');
+    }
   }
 
   &__text {
@@ -145,27 +146,53 @@
     margin-bottom: 32px;
 
     font-family: 'DM Sans';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
+    letter-spacing: 0.04em;
 
     text-align: center;
-    letter-spacing: 0.04em;
 
     color: var(--color-white);
   }
 
   &__btn {
     display: block;
+
     width: 40px;
     height: 40px;
 
     border: none;
     border-radius: 50%;
+    // &:hover {
+    //   box-shadow: 0 8px 30px #51061966;
+    // }
+    // ------------- hover/focus alternative
+    &:hover,
+    &:focus {
+      animation: pulse 1s;
+      box-shadow: 0 0 0 2em rgba(#fff, 0);
+      background-color: transparent;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 var(--color-btn-active);
+      }
+      // ------------- hover/focus end
+    }
   }
 
   &__icon {
     fill: var(--color-btn-active);
+    border-radius: 50%;
+    // ------------- hover/focus  alternative
+    // &:hover,
+    // &:focus {
+    //   fill: rgb(163, 183, 17);
+    // }
+
+    // --------- hover/focus end
   }
 }
