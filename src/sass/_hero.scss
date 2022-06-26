@@ -1,24 +1,13 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-p {
-  margin: 0;
-  padding: 0;
-}
 .hero__container {
   position: relative;
   z-index: 3;
 }
 .hero {
+  overflow: hidden;
   position: relative;
   height: 502px;
-  width: 320px;
-  padding-left: 20px;
-  background-color: #ffb8ca;
+
+  background-color: var(--color-bg-main);
 }
 
 .hero__title {
@@ -38,7 +27,7 @@ p {
 }
 .hero__title--accept {
   font-size: 37px;
-  color: #d41443;
+  color: var(--color-text-title);
 }
 .hero__btn {
   display: flex;
@@ -61,12 +50,12 @@ p {
   text-decoration: none;
 }
 .btn--secondary {
-  background-color: #d41443;
+  background-color: var(--color-text-title);
   color: #ffffff;
 }
 .btn--primary {
   background-color: #ffffff;
-  color: #d41443;
+  color: var(--color-text-title);
 }
 // decoration
 .decoration__elipse {
@@ -80,7 +69,7 @@ p {
   z-index: 1;
 
   border-radius: 50%;
-  background-color: #ffa5ba;
+  background-color: var(--color-text-lable);
 }
 .hero__img {
   position: absolute;
