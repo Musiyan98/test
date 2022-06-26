@@ -4,7 +4,7 @@
 
 .modal__window {
   position: relative;
-  max-width: 600px;
+  max-width: 320px;// 600px
   border-radius: 22px;
   background-color: var(--color-text-lable);
   margin-left: auto;
@@ -27,8 +27,8 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  color: var(--color-white);
-  background-color: #ffa5ba;
+  fill: var(--color-white);
+  background-color: var(--color-text-lable);
 }
 
 .form-title {
@@ -37,7 +37,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-  text-align: right;
+  text-align: center; //right
   letter-spacing: 0.005em;
   color: rgb(148, 56, 148);
 }
@@ -46,7 +46,7 @@
   width: auto;
   left: 40px;
   top: 112px;
-  padding-left: 190px;
+  padding-left: 110px;//180
   padding-right: 10px;
   margin-bottom: 30px;
 }
@@ -110,7 +110,7 @@
   border: none;
   margin-left: auto;
   margin-right: auto;
-  background-color: #d41342;
+  background-color: var(--color-btn-active);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
