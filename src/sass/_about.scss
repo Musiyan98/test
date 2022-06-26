@@ -53,6 +53,7 @@
 // }
 .about__description {
     position: relative;
+    // max-width: 210px;
 }
 .about__text-bold {
    margin-top: 40px;
@@ -68,8 +69,12 @@
 
 .about__info {
     background-image: url(../images/about/back-milk.png);
+    max-width: 280px;
+    
     background-repeat: no-repeat;
     background-position: 0 58px;
+    // float: right;
+    background-size: contain;
     //    position: absolute;
     //    top: 10px;
     //    left: 0;
@@ -106,6 +111,10 @@ text-align: left;
 padding-bottom: 20px;
     margin: 0;
     
+}
+
+.about_icon {
+fill: #D41443;
 }
 
 .about__button-text {
