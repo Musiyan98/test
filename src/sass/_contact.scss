@@ -1,17 +1,20 @@
 
-ul {
-  list-style: none;;
-}
+// ul {
+//   list-style: none;;
+// }
 
-a {
-  font-style: normal;
-}
+// a {
+//   font-style: normal;
+// }
 
-.contact {
-  margin-left: auto;
-  margin-right: auto;
-}
+// .contact {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
+.contacts {
+  background-color: var(--color-bg-light);
+}
 .contact__title {
   visibility: hidden;
 }
@@ -46,10 +49,10 @@ a {
 }
 
 .contact__list {
-  display: block;
-  margin-bottom: 32px;
-  // display: grid;
-  //  gap: 32px;
+  // display: block;
+  // margin-bottom: 32px;
+  display: grid;
+  gap: 20px;
   // grid-template-columns: 368px 368px 368px;
 }
 
@@ -62,9 +65,9 @@ a {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
 
-.contact__item:not(:last-child) {
-  margin-bottom: 20px;
-}
+// .contact__item:not(:last-child) {
+//   margin-bottom: 20px;
+// }
 
 .contact__location,
 .contact__sheddle {
@@ -107,6 +110,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  font-style: normal;
   color: var(--color-text-paragraph);
 }
 
@@ -117,6 +121,7 @@ a {
 .contact__button__list {
   list-style: none;
   padding: 0;
+  margin-top: 32px;
 }
 
 .contact__button {
