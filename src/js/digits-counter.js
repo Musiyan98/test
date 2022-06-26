@@ -28,7 +28,7 @@ function windowLoad() {
         window.requestAnimationFrame(step);
     }
     // Пуск при завантаженні сторінки
-    //digitsCountersInit();
+    digitsCountersInit();
 
     // //Пуск при скролі (появі блока з лічильниками)
     let options = {
