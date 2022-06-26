@@ -130,6 +130,10 @@
   }
 
   &__icon {
+    position: relative;
+    top: 2px;
+    transform: translateX(-2%);
+
     fill: var(--color-btn-active);
     border-radius: 50%;
     // ------------- hover/focus  alternative
