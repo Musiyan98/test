@@ -39,79 +39,24 @@
   }
 
   &__thumb {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    padding: 160px 0 40px 0;
-    border-radius: 24px;
-
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--color-bg-main);
-
-    &::before {
-      content: '';
-      display: block;
-      margin-top: -106%;
-      height: 280px;
-      width: 100%;
-
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url('/src/images/products/ice_sm.png');
-    }
+    @include products-thumb(
+      var(--color-bg-main),
+      url('/src/images/products/ice_sm.png')
+    );
   }
 
   &__thumb-1 {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    padding: 160px 0 40px 0;
-
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 24px;
-    background-color: var(--color-coffee-style);
-
-    &::before {
-      content: '';
-      margin-top: -106%;
-      height: 280px;
-      width: 100%;
-
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url('/src/images/products/ice-1_sm.png');
-    }
+    @include products-thumb(
+      var(--color-coffee-style),
+      url('/src/images/products/ice-1_sm.png')
+    );
   }
 
   &__thumb-2 {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    padding: 160px 0 40px 0;
-
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 24px;
-    background-color: var(--color-food-style);
-
-    &::before {
-      content: '';
-      margin-top: -106%;
-      height: 280px;
-      width: 100%;
-      background-image: url('/src/images/products/ice-2_sm.png');
-
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+    @include products-thumb(
+      var(--color-food-style),
+      url('/src/images/products/ice-2_sm.png')
+    );
   }
 
   &__subtitle {
@@ -185,6 +130,10 @@
   }
 
   &__icon {
+    position: relative;
+    top: 2px;
+    transform: translateX(-2%);
+
     fill: var(--color-btn-active);
     border-radius: 50%;
     // ------------- hover/focus  alternative
