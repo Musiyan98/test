@@ -57,7 +57,7 @@
   }
 }
 
-@mixin thumb {
+@mixin products-thumb($color, $image) {
   display: flex;
   flex-direction: column;
 
@@ -67,8 +67,7 @@
 
   justify-content: center;
   align-items: center;
-
-  background-color: var(--color-bg-main);
+  background-color: $color;
 
   &::before {
     content: '';
@@ -79,6 +78,6 @@
 
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('/src/images/products/ice_sm.png');
+    background-image: $image;
   }
 }
