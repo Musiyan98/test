@@ -165,6 +165,7 @@
     &:focus {
       animation: pulse 1s;
       box-shadow: 0 0 0 2em rgba(#fff, 0);
+      background-color: transparent;
     }
 
     @keyframes pulse {
@@ -181,15 +182,9 @@
     // ------------- hover/focus
     &:hover,
     &:focus {
-      animation: pulse 1s;
-      box-shadow: 0 0 0 2em rgba(#fff, 0);
+      fill: rgb(163, 183, 17);
     }
 
-    @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0 0 var(--color-btn-active);
-      }
-    }
     // --------- hover/focus end
   }
 }
