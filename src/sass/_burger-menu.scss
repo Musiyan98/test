@@ -109,14 +109,14 @@ li {
     &:last-child {
       border-bottom: 1px solid #e18298;
     }
+  }
 
+  &__link {
     &:hover,
     &:focus {
       color: #d41443;
+      padding-left: calc((100% - 320px) / 2);
     }
-  }
-  &__link {
-    padding-left: calc((100% - 320px) / 2);
   }
 }
 
