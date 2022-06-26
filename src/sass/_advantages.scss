@@ -1,26 +1,40 @@
 .advantages {
     background-color: #FFF5F6;
-    padding-right: 50px;
-    padding-bottom: 60px;
-    padding-left: 5px;
+    padding-top: 0;
+}
+
+.advantages-container {
+    padding-right: 70px;
 }
 
 .advantages__amount {
     font-family: 'Titan One';
-    font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
-    display: block;
+    color: var(--color-text-title);
     margin-bottom: 18px;
+
+    display: inline-block;
+}
+
+.kg {
+    font-family: 'Titan One';
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-title);
+    display: inline-block;
+    margin-bottom: 18px;
+    margin-left: -11px;
+    padding-left: 0;
 }
 
 .advantages__description {
     font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
@@ -36,7 +50,9 @@
 
     display: block;
     margin-bottom: 16px;
-
+}
+.advantages__amount--milk:hover::before {
+    filter: hue-rotate(370deg) saturate(5);
 }
 
 .advantages__amount--apples::before {
@@ -48,6 +64,9 @@
     display: block;
     margin-bottom: 16px;
 }
+.advantages__amount--apples:hover::before {
+    filter: hue-rotate(370deg) saturate(5);
+}
 
 .advantages__amount--heart::before {
     background-image: url("../images/advantages-icons/heart.png");
@@ -57,4 +76,7 @@
 
     display: block;
     margin-bottom: 16px;
+}
+.advantages__amount--heart:hover::before {
+    filter: hue-rotate(370deg) saturate(5);
 }

@@ -1,32 +1,61 @@
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vw;
+  height: 100%;
 
   z-index: 555;
 
   background-color: #e17992;
 
   transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transition: transform 250ms ease-in-out;
 
   &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
     transform: translateX(0);
+  }
+  
+}
+.mobile-wrapper {
+  margin-top: 60px;
+}
+
+.menu-toggle {
+  position: absolute;
+  content: '';
+  top: 20px;
+  right: 20px;
+
+  background-color: transparent;
+}
+
+.mobile-menu__icon-close {
+  fill: white;
+}
+
+.mobile-menu__icon-close {
+  &:hover,
+  :focus {
+    fill: #d41443;
   }
 }
 
-.icon-cross {
-  fill: #ffffff;
-  background-color: transparent;
-}
-.icon-cross:hover,
-.icon-cross:focus {
-  fill: #d41443;
-}
 .button-buy {
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
 
@@ -35,18 +64,64 @@
   line-height: 1.3;
   width: 186px;
   height: 44px;
+  border-radius: 22px;
+  border-width: 0px;
+
+  margin-top: 24px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
 
   background-color: #ffffff;
   color: #d41443;
-
-  // @media (max-width: 480px) {
-  //   display: none;
-  // }
 }
+
+.button-buy__icon {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
 .mobile-menu {
   display: flex;
+  width: 100vw;
+  justify-content: flex-end;
 
-  // @media (max-width: 1199px) {
-  //   display: none;
-  // }
+  &__list {
+    width: 100vw;
+  }
+
+  &__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.3;
+    align-items: center;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    border-top: 1px solid #e18298;
+
+    color: #ffffff;
+
+    &:last-child {
+      border-bottom: 1px solid #e18298;
+    }
+
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
+  }
+  &__link {
+    padding-left: calc((100% - 320px) / 2);
+  }
+}
+
+.mobile-menu__link--current {
+  color: #d41443;
 }
