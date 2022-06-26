@@ -1,11 +1,7 @@
 .products {
-  // text-align: center;
-  // justify-content: center;
-  // align-items: center;
-
   background-color: var(--color-white);
 
-  &__subtext {
+  &__labels {
     margin-bottom: 15px;
 
     font-family: 'Titan One';
@@ -37,10 +33,10 @@
 
   &__item {
     max-width: 100%;
-  }
 
-  &__item:not(:last-child) {
-    margin-bottom: 140px;
+    &:not(:last-child) {
+      margin-bottom: 140px;
+    }
   }
 
   &__thumb {
@@ -53,18 +49,18 @@
 
     justify-content: center;
     align-items: center;
-  }
 
-  &__thumb::before {
-    content: '';
-    display: block;
-    margin-top: -106%;
-    height: 280px;
-    width: 100%;
-    background-image: url('/src/images/products/ice_sm.png');
+    &::before {
+      content: '';
+      display: block;
+      margin-top: -106%;
+      height: 280px;
+      width: 100%;
+      background-image: url('/src/images/products/ice_sm.png');
 
-    background-size: contain;
-    background-repeat: no-repeat;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   &__thumb-1 {
@@ -76,17 +72,17 @@
     align-items: center;
     background-color: var(--color-coffee-style);
     border-radius: 24px;
-  }
 
-  &__thumb-1::before {
-    content: '';
-    margin-top: -106%;
-    height: 280px;
-    width: 100%;
-    background-image: url('/src/images/products/ice-1_sm.png');
+    &::before {
+      content: '';
+      margin-top: -106%;
+      height: 280px;
+      width: 100%;
+      background-image: url('/src/images/products/ice-1_sm.png');
 
-    background-size: contain;
-    background-repeat: no-repeat;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   &__thumb-2 {
@@ -98,17 +94,17 @@
     align-items: center;
     background-color: var(--color-food-style);
     border-radius: 24px;
-  }
 
-  &__thumb-2::before {
-    content: '';
-    margin-top: -106%;
-    height: 280px;
-    width: 100%;
-    background-image: url('/src/images/products/ice-2_sm.png');
+    &::before {
+      content: '';
+      margin-top: -106%;
+      height: 280px;
+      width: 100%;
+      background-image: url('/src/images/products/ice-2_sm.png');
 
-    background-size: contain;
-    background-repeat: no-repeat;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   &__subtitle {
@@ -127,14 +123,14 @@
     text-transform: uppercase;
 
     color: var(--color-white);
-  }
 
-  &__subtitle::after {
-    content: '';
-    width: 26px;
-    height: 6px;
-    margin: 32px auto;
-    background-image: url('../images/products/3x-balls.svg');
+    &::after {
+      content: '';
+      width: 26px;
+      height: 6px;
+      margin: 32px auto;
+      background-image: url('../images/products/3x-balls.svg');
+    }
   }
 
   &__text {
@@ -161,9 +157,39 @@
 
     border: none;
     border-radius: 50%;
+    // &:hover {
+    //   box-shadow: 0 8px 30px #51061966;
+    // }
+    // ------------- hover/focus
+    &:hover,
+    &:focus {
+      animation: pulse 1s;
+      box-shadow: 0 0 0 2em rgba(#fff, 0);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 var(--color-btn-active);
+      }
+      // ------------- hover/focus end
+    }
   }
 
   &__icon {
     fill: var(--color-btn-active);
+    border-radius: 50%;
+    // ------------- hover/focus
+    &:hover,
+    &:focus {
+      animation: pulse 1s;
+      box-shadow: 0 0 0 2em rgba(#fff, 0);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 var(--color-btn-active);
+      }
+    }
+    // --------- hover/focus end
   }
 }
