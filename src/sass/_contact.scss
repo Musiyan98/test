@@ -49,10 +49,10 @@
 }
 
 .contact__list {
-  display: block;
-  margin-bottom: 32px;
-   // display: grid;
-  //  gap: 32px;
+  // display: block;
+  // margin-bottom: 32px;
+  display: grid;
+  gap: 20px;
   // grid-template-columns: 368px 368px 368px;
 }
 
@@ -65,9 +65,9 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
 
-.contact__item:not(:last-child) {
-  margin-bottom: 20px;
-}
+// .contact__item:not(:last-child) {
+//   margin-bottom: 20px;
+// }
 
 .contact__location,
 .contact__sheddle {
@@ -110,6 +110,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  font-style: normal;
   color: var(--color-text-paragraph);
 }
 
@@ -120,6 +121,7 @@
 .contact__button__list {
   list-style: none;
   padding: 0;
+  margin-top: 32px;
 }
 
 .contact__button {
