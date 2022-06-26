@@ -1,18 +1,23 @@
 window.addEventListener("load", windowLoad);
 
 function windowLoad() {
+    let runningAnimation = {};
+
     // Функція ініціалізації
     function digitsCountersInit(digitsCountersItems) {
         let digitsCounters = digitsCountersItems ? digitsCountersItems : document.querySelectorAll("[data-digits-counter]");
         if (digitsCounters) {
             digitsCounters.forEach(digitsCounter => {
-                digitsCountersAnimate(digitsCounter);
+                if (!runningAnimation[digitsCounter.id]) {
+                    digitsCountersAnimate(digitsCounter);
+                }
             });
         }
     }
     // Функція анімації
     function digitsCountersAnimate(digitsCounter) {
         let startTimestamp = null;
+        runningAnimation[digitsCounter.id] = true;
         const duration = parseInt(digitsCounter.dataset.digitsCounter) ? parseInt(digitsCounter.dataset.digitsCounter) : 1000;
         const startValue = parseInt(digitsCounter.innerHTML);
         const startPosition = 0;
@@ -23,12 +28,14 @@ function windowLoad() {
             console.log(startValue + " - " + digitsCounter.innerHTML + ", progress: " + progress)
             if (progress < 1) {
                 window.requestAnimationFrame(step);
+            } else {
+                runningAnimation[digitsCounter.id] = false;
             }
         };
         window.requestAnimationFrame(step);
     }
     // Пуск при завантаженні сторінки
-    digitsCountersInit();
+    //digitsCountersInit();
 
     // //Пуск при скролі (появі блока з лічильниками)
     let options = {
