@@ -1,3 +1,17 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  &.is-hidden {
+ opacity: 0;
+ visibility: hidden;
+ pointer-events: none;
+  }
+}
+
 .modal_container {
   width: 100%;
 }
@@ -128,4 +142,17 @@
 
 .modal_button {
   padding-bottom: 20px;
+}
+
+.agreement {
+ margin-top: 10px;
+
+&__row {
+  display: flex;
+}
+
+&__checkbox {
+  margin-top: 4px;
+  margin-right: 4px;
+}
 }
