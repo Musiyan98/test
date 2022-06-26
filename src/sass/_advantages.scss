@@ -1,6 +1,5 @@
 .advantages {
     background-color: #FFF5F6;
-    padding-top: 0;
 }
 
 .advantages-container {
@@ -40,6 +39,10 @@
     line-height: 1.7;
     color: #000000;
     margin-bottom: 32px;
+}
+
+.advantages__description:last-child {
+    margin-bottom: 0;
 }
 
 .advantages__amount--milk::before {
