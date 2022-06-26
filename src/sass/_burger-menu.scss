@@ -27,6 +27,7 @@ li {
     pointer-events: all;
     transform: translateX(0);
   }
+  
 }
 .mobile-wrapper {
   margin-top: 60px;
@@ -88,6 +89,7 @@ li {
 .mobile-menu {
   display: flex;
   width: 100vw;
+  justify-content: flex-end;
 
   &__list {
     width: 100vw;
