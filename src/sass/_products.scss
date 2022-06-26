@@ -180,10 +180,10 @@
     fill: var(--color-btn-active);
     border-radius: 50%;
     // ------------- hover/focus
-    &:hover,
-    &:focus {
-      fill: rgb(163, 183, 17);
-    }
+    // &:hover,
+    // &:focus {
+    //   fill: rgb(163, 183, 17);
+    // }
 
     // --------- hover/focus end
   }
