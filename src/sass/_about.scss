@@ -22,8 +22,7 @@
 
 .about__label {
     font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
+    
     font-size: 18px;
     line-height: 1.667;
 
@@ -31,6 +30,7 @@
     text-transform: uppercase;
 
     color: #FFA5BA;
+    margin-bottom: 15px;
 }
 
 .about__title {
@@ -44,15 +44,19 @@
     text-transform: uppercase;
 
     color: #D41443;
+
+    margin-bottom: 32px;
 }
 
-.about__info {
-    display: flex;
+// .about__info {
+//     // display: flex;
+// }
+.about__description {
+    position: relative;
 }
-
 .about__text-bold {
-    // position: relative;
-    margin-bottom: 40px;
+   margin-top: 40px;
+    margin-bottom: 30px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -62,10 +66,12 @@
     color: #000000;
 }
 
-.back-milk {
+.about__info {
     background-image: url(../images/about/back-milk.png);
+    background-repeat: no-repeat;
+    background-position: 0 58px;
     //    position: absolute;
-    //    top: 0px;
+    //    top: 10px;
     //    left: 0;
 }
 
@@ -77,28 +83,43 @@
     line-height: 1.62;
     text-align: left;
     color: #907E82;
-
+    margin-bottom: 10px;
 }
+// .about__button {
+//     background-color: #FFFFFF;
+// }
 
+.about__button {
+text-align: left;
+}
 .about__btn {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 22px;
     width: 176px;
     height: 44px;
     margin-left: auto;
     margin-right: auto;
-
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    padding-top: 17px;
+padding-bottom: 20px;
+    margin: 0;
+    
 }
 
 .about__button-text {
     font-family: 'DM Sans';
-    font-style: normal;
+    // font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     text-align: center;
 
     color: #D41443;
+    // background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
 }
