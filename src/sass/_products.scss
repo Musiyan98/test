@@ -16,7 +16,7 @@
   }
 
   &__title {
-    margin-bottom: 148px;
+    margin-bottom: 8px;
 
     font-family: 'Titan One';
 
@@ -31,15 +31,14 @@
   }
 
   &__item {
-    max-width: 100%;
-
-    &:not(:last-child) {
-      margin-bottom: 140px;
-    }
+    position: relative;
+    padding-top: 140px;
   }
 
   &__thumb {
     @include products-thumb(
+      280px,
+      280px,
       var(--color-bg-main),
       url('/src/images/products/ice_sm.png')
     );
@@ -47,6 +46,8 @@
 
   &__thumb-1 {
     @include products-thumb(
+      280px,
+      280px,
       var(--color-coffee-style),
       url('/src/images/products/ice-1_sm.png')
     );
@@ -54,6 +55,8 @@
 
   &__thumb-2 {
     @include products-thumb(
+      280px,
+      280px,
       var(--color-food-style),
       url('/src/images/products/ice-2_sm.png')
     );
