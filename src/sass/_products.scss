@@ -236,6 +236,16 @@
 
     color: var(--color-white);
 
+    @include mq(tablet) {
+      font-size: 20px;
+      line-height: 1.15;
+    }
+
+    @include mq(desktop) {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
     &::after {
       content: '';
       width: 26px;
@@ -258,10 +268,14 @@
     color: var(--color-white);
 
     @include mq(tablet) {
+      font-size: 14px;
+      line-height: 176%;
     }
 
     @include mq(desktop) {
       margin-bottom: 60px;
+
+      font-size: 16px;
     }
   }
 
