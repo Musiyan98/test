@@ -57,27 +57,26 @@
   }
 }
 
-@mixin products-thumb($width-img, $height-img, $color, $image) {
-  display: flex;
-  flex-direction: column;
+// @mixin products-thumb($width-img, $height-img, $color, $image) {
+//   display: flex;
+//   flex-direction: column;
 
-  padding: 140px 0 40px 0;
-  border-radius: 24px;
+//   border-radius: 24px;
 
-  justify-content: center;
-  align-items: center;
-  background-color: $color;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: $color;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
 
-    height: $height-img;
-    width: $width-img;
+//     height: $height-img;
+//     width: $width-img;
 
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: $image;
-  }
-}
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-image: $image;
+//   }
+// }
