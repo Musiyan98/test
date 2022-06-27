@@ -6,9 +6,18 @@
       display: flex;
       justify-content: space-between;
     }
+
+    @include mq (tablet-only) {
+      align-items: center;
+    }
   }
 
   &__title {
+    margin-bottom: 40px;
+
+    @include mq(desktop) {
+      margin-bottom: 60px;
+    }
   }
 
   &__subtitle {
@@ -33,11 +42,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     width: 200px;
-    margin-bottom: 40px;
   }
 
   &__contacts {
-    margin-bottom: 40px;
+    @include mq (mobile) {
+      margin-bottom: 40px;
+    }
   }
 
   &__socials {
@@ -76,8 +86,10 @@
     text-align: center;
 
     color: var(--color-text-paragraph);
-    width: 150px;
     margin: 0 auto;
+    @include mq (mobile-only) {
+      width: 150px;
+    }
   }
 }
 .socials-list {
