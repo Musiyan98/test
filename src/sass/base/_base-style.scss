@@ -43,4 +43,12 @@ body {
    padding-right: 20px;
    margin: 0 auto;
    width: 320px;
+
+   @include mq(tablet) {
+      width: 768px;
+   }
+   
+   @include mq(desktop) {
+      width: 1200px;
+   }
 } 
