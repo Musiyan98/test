@@ -27,7 +27,7 @@
   }
 
   &__title {
-    margin-bottom: 8px;
+    margin-bottom: 148px;
 
     font-family: 'Titan One';
 
@@ -41,7 +41,7 @@
     color: var(--color-text-title);
 
     @include mq(tablet) {
-      margin-bottom: 20px;
+      margin-bottom: 158px;
       font-size: 48px;
       line-height: 1.15;
     }
@@ -63,111 +63,89 @@
     }
   }
 
-  &__item {
+  &__item-cream {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    margin-bottom: 140px;
+    padding: 160px 40px 40px 40px;
     position: relative;
-    padding-top: 140px;
 
-    @include mq(tablet) {
-      padding-top: 138px;
-    }
+    background-color: var(--color-bg-main);
 
-    @include mq(desktop) {
-      padding-top: 261px;
-    }
-  }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-50%);
 
-  &__thumb {
-    padding: 140px 0 40px 0;
+      height: 280px;
+      width: 280px;
 
-    @include products-thumb(
-      280px,
-      280px,
-      var(--color-bg-main),
-      url('/src/images/products/ice_sm.png')
-    );
-
-    @include mq(tablet) {
-      padding: 118px 0 40px 0;
-      width: 224px;
-
-      @include products-thumb(
-        224px,
-        224px,
-        var(--color-bg-main),
-        url('/src/images/products/home-pic1_md.png')
-      );
-    }
-    @include mq(desktop) {
-      padding: 165px 0 60px 0;
-      width: 368px;
-      @include products-thumb(
-        368px,
-        394px,
-        var(--color-bg-main),
-        url('/src/images/products/home-pic1_lg.png')
-      );
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('/src/images/products/ice_sm.png');
     }
   }
 
-  &__thumb-1 {
-    padding: 140px 0 40px 0;
-    @include products-thumb(
-      280px,
-      280px,
-      var(--color-coffee-style),
-      url('/src/images/products/ice-1_sm.png')
-    );
+  &__item-coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 
-    @include mq(tablet) {
-      padding: 118px 0 40px 0;
-      width: 224px;
-      @include products-thumb(
-        224px,
-        224px,
-        var(--color-coffee-style),
-        url('/src/images/products/home-pic2_md.png')
-      );
-    }
-    @include mq(desktop) {
-      padding: 165px 0 60px 0;
-      width: 368px;
-      @include products-thumb(
-        368px,
-        394px,
-        var(--color-coffee-style),
-        url('/src/images/products/home-pic2_lg.png')
-      );
+    margin-bottom: 140px;
+    padding: 160px 40px 40px 40px;
+    position: relative;
+
+    background-color: var(--color-coffee-style);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-50%);
+
+      height: 280px;
+      width: 280px;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('/src/images/products/ice-1_sm.png');
     }
   }
 
-  &__thumb-2 {
-    padding: 140px 0 40px 0;
-    @include products-thumb(
-      280px,
-      280px,
-      var(--color-food-style),
-      url('/src/images/products/ice-2_sm.png')
-    );
+  &__item-milkshakes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 
-    @include mq(tablet) {
-      padding: 118px 0 40px 0;
-      width: 224px;
-      @include products-thumb(
-        224px,
-        224px,
-        var(--color-food-style),
-        url('/src/images/products/home-pic3_md.png')
-      );
-    }
-    @include mq(desktop) {
-      padding: 165px 0 60px 0;
-      width: 368px;
-      @include products-thumb(
-        368px,
-        394px,
-        var(--color-food-style),
-        url('/src/images/products/home-pic3_lg.png')
-      );
+    padding: 160px 40px 40px 40px;
+    position: relative;
+
+    background-color: var(--color-food-style);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-50%);
+
+      height: 280px;
+      width: 280px;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('/src/images/products/ice-2_sm.png');
     }
   }
 
@@ -175,16 +153,12 @@
     display: flex;
     flex-direction: column;
 
-    margin-top: 20px;
-
     font-family: 'Titan One';
 
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
-    text-align: center;
 
     color: var(--color-white);
 
@@ -202,8 +176,6 @@
   }
 
   &__text {
-    padding-left: 41px;
-    padding-right: 39px;
     margin-bottom: 32px;
 
     font-family: 'DM Sans';
@@ -213,19 +185,13 @@
     line-height: 152%;
     letter-spacing: 0.04em;
 
-    text-align: center;
-
     color: var(--color-white);
 
     @include mq(tablet) {
-      padding-left: 32px;
-      padding-right: 32px;
     }
 
     @include mq(desktop) {
       margin-bottom: 60px;
-      padding-left: 64px;
-      padding-right: 63px;
     }
   }
 
@@ -237,10 +203,11 @@
 
     border: none;
     border-radius: 50%;
+
+    // ------------- hover/focus alternative
     // &:hover {
     //   box-shadow: 0 8px 30px #51061966;
     // }
-    // ------------- hover/focus alternative
     &:hover,
     &:focus {
       animation: pulse 1s;
@@ -263,6 +230,7 @@
 
     fill: var(--color-btn-active);
     border-radius: 50%;
+
     // ------------- hover/focus  alternative
     // &:hover,
     // &:focus {
