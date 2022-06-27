@@ -73,9 +73,18 @@
   }
 
   &__copyright {
-    // width: 100vw;
     padding-top: 16px;
     border-top: 1px solid #e1e1e1;
+
+    @include mq (tablet) {
+      width: 100vw;
+      margin-left: calc((104vw - 768px)/(-2));
+    }
+
+    @include mq (desktop) {
+      width: 100vw;
+      margin-left: calc((104vw - 1200px)/(-2));
+    }
   }
 
   &__copyright-text {
