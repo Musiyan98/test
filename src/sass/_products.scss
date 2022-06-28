@@ -15,11 +15,13 @@
     color: var(--color-text-lable);
 
     @include mq(tablet) {
+      margin-bottom: 18px;
       font-size: 26px;
       line-height: 1.15;
     }
 
     @include mq(desktop) {
+      margin-bottom: 16px;
       font-size: 30px;
       line-height: 1.13;
       letter-spacing: 0.04em;
